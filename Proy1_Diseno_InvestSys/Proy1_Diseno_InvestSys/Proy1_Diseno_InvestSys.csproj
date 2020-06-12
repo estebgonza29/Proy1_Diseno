@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ClassBasura1.cs" />
+    <Compile Include="Model\Current.cs" />
     <Compile Include="Model\InvSystem.cs" />
     <Compile Include="Model\RatesTable.cs" />
     <Compile Include="Form1.cs">

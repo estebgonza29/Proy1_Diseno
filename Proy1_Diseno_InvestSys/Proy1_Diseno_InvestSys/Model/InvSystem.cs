@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    class InvSystem
-    {
+    class InvSystem {
+
     }
 }
