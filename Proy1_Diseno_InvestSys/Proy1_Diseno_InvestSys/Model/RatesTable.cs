@@ -19,6 +19,8 @@ namespace Proy1_Diseno_InvestSys.Controller
 
         public void addRow()
         {
+
+
             rows += 1;
         }
     }
