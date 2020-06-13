@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    public class Current : InvSystem
+    public class AgreedRate : InvSystem
     {
-        public Current() : base()
+        public AgreedRate() : base()
         {
 
         }
         public override void calculateProduction()
         {
-            Console.WriteLine("calculateProduction Current");
+            Console.WriteLine("calculateProduction AgreedRate");
             throw new NotImplementedException();
         }
     }

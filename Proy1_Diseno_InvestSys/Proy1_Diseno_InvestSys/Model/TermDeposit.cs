@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    public class Current : InvSystem
+    public class TermDeposit : InvSystem
     {
-        public Current() : base()
+        private float retention = 0;
+        public TermDeposit() : base()
         {
 
         }
         public override void calculateProduction()
         {
-            Console.WriteLine("calculateProduction Current");
+            Console.WriteLine("calculateProduction TermDeposit");
             throw new NotImplementedException();
         }
     }

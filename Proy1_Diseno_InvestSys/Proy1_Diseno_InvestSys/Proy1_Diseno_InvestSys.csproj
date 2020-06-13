@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotLiquid, Version=2.0.351.0, Culture=neutral, PublicKeyToken=82e46016ecf9f07c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotLiquid.2.0.351\lib\net45\DotLiquid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\ClassBasura1.cs" />
+    <Compile Include="Model\AgreedRate.cs" />
+    <Compile Include="Model\TermDeposit.cs" />
     <Compile Include="Model\Current.cs" />
     <Compile Include="Model\InvSystem.cs" />
     <Compile Include="Model\RatesTable.cs" />
@@ -68,6 +73,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
