@@ -51,6 +51,10 @@
   <ItemGroup>
     <Compile Include="Controller\ClassBasura1.cs" />
     <Compile Include="Model\AgreedRate.cs" />
+    <Compile Include="Model\AgreeRateBuilder.cs" />
+    <Compile Include="Model\CurrentRatesBuilder.cs" />
+    <Compile Include="Model\RateTableBuilder.cs" />
+    <Compile Include="Model\RateTableDirector.cs" />
     <Compile Include="Model\TermDeposit.cs" />
     <Compile Include="Model\Current.cs" />
     <Compile Include="Model\InvSystem.cs" />
@@ -61,6 +65,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\TermDepositRatesBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Class1.cs" />
