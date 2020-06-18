@@ -17,10 +17,10 @@ namespace Proy1_Diseno_InvestSys.Model
         protected float _minimumAmount = 0;
         protected float _totalProductions = 0;
         protected float _annualRate = 1;
-        protected object _ratesTable;
-        //protected Currency _currency;
+        protected Currency _currency;
+        protected RatesTable _ratesTable;
 
-        public InvSystem()
+        private InvSystem()
         {
             _name = "";
             _investedAmount = 0;
@@ -28,12 +28,12 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable = new RatesTable();
         }
 
-        public InvSystem(string name, float investedAmount, int totalTerms/*, RatesTable ratesTable/*, Currency currency*/)
-        {
+        public InvSystem(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) {
             this._name = name;
             this._investedAmount = investedAmount;
             this._totalTerms = totalTerms;
-            //this._currency = _currency;
+            this._currency = currency;
+            this._ratesTable = ratesTable;
         }
 
         public string name
@@ -78,23 +78,17 @@ namespace Proy1_Diseno_InvestSys.Model
             set { _annualRate = value; }
         }
 
-        public object ratesTable 
-        {
-            get { return _ratesTable; }
-            set { _ratesTable = value; } 
-        }
-
-        /*public Currency currency
+        public Currency currency
         {
             get { return _currency; }
             set { _currency = value; }
-        }*/
+        }
 
-        /*public RatesTable ratesTable
+        public RatesTable ratesTable
         {
             get { return _ratesTable; }
             set { _ratesTable = value; }
-        }*/
+        }
 
         public bool checkValidCurrency()
         {
