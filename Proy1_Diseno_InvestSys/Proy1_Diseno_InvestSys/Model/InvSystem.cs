@@ -9,31 +9,90 @@ using System.Windows.Forms;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    public abstract class InvSystem {
-        protected string name;
-        protected int totalTerms;
-        protected int minimumTerms = 0;
-        protected float investedAmount;
-        protected float minimumAmount = 0;
-        protected float totalProductions = 0;
-        protected float annualRate = 1;
-        //protected Currency currency;
-        //protected RatesTable ratesTable;
+    public abstract class InvSystem
+    {
+        protected string _name;
+        protected int _totalTerms;
+        protected int _minimumTerms = 0;
+        protected float _investedAmount;
+        protected float _minimumAmount = 0;
+        protected float _totalProductions = 0;
+        protected float _annualRate = 1;
+        //protected Currency _currency;
+        //protected RatesTable _ratesTable { get; set; };
 
-        public InvSystem(string name, float investedAmount, int totalTerms
-        //Currency currency,
-        //RatesTable ratesTable
-        ) {
-            this.name = name;
-            this.investedAmount = investedAmount;
-            this.totalTerms = totalTerms;
-            //this.currency = currency;
-            //this.ratesTable = ratesTable;
-        }
-
-        protected InvSystem()
+        public InvSystem()
         {
+            _name = "";
+            _investedAmount = 0;
+            _totalTerms = 0;
+            //_ratesTable = new RatesTable();
         }
+
+        public InvSystem(string name, float investedAmount, int totalTerms/*,
+        //Currency currency,
+        RatesTable ratesTable*/
+        ) {
+            this._name = name;
+            this._investedAmount = investedAmount;
+            this._totalTerms = totalTerms;
+            //this._currency = _currency;
+            //this._ratesTable = ratesTable;
+        }
+
+        public string name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+
+        public int totalTerms
+        {
+            get { return _totalTerms; }
+            set { _totalTerms = value; }
+        }
+
+        public int minimumTerms
+        {
+            get { return _minimumTerms; }
+            set { _minimumTerms = value; }
+        }
+
+        public float investedAmount
+        {
+            get { return _investedAmount; }
+            set { _investedAmount = value; }
+        }
+
+        public float minimumAmount
+        {
+            get { return _minimumAmount; }
+            set { _minimumAmount = value; }
+        }
+
+        public float totalProductions
+        {
+            get { return _totalProductions; }
+            set { _totalProductions = value; }
+        }
+
+        public float annualRate
+        {
+            get { return _annualRate; }
+            set { _annualRate = value; }
+        }
+
+        /*public Currency currency
+        {
+            get { return _currency; }
+            set { _currency = value; }
+        }*/
+
+        /*public RatesTable ratesTable
+        {
+            get { return _ratesTable; }
+            set { _ratesTable = value; }
+        }*/
 
         public bool checkValidCurrency()
         {
