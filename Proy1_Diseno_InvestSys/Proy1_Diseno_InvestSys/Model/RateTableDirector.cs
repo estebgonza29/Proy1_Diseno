@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proy1_Diseno_InvestSys.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,18 +10,23 @@ namespace Proy1_Diseno_InvestSys.Model
     class RateTableDirector
     {
         private RateTableBuilder _rateBuilder;
+
+        public RateTableDirector(RateTableBuilder builder) {
+            if (builder == null) throw new Exception("Builder cannot be null");
+            this._rateBuilder = builder;
+        }
+
         public RateTableBuilder rateBuilder
         {
             get { return _rateBuilder; }
             set { _rateBuilder = value; }
         }
-        public void construct(InvestmentType type)
+        public void construct()
         {
-
+            _rateBuilder.buildTable();
         }
         public RatesTable getTable()
         {
-            _rateBuilder.buildTable();
             return _rateBuilder.ratesTable;
         }
     }
