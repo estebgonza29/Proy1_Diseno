@@ -1,7 +1,6 @@
 ﻿using Proy1_Diseno_InvestSys.Controller;
 using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,26 +17,23 @@ namespace Proy1_Diseno_InvestSys.Model
         protected float _minimumAmount = 0;
         protected float _totalProductions = 0;
         protected float _annualRate = 1;
+        protected object _ratesTable;
         //protected Currency _currency;
-        //protected RatesTable _ratesTable { get; set; };
 
         public InvSystem()
         {
             _name = "";
             _investedAmount = 0;
             _totalTerms = 0;
-            //_ratesTable = new RatesTable();
+            _ratesTable = new RatesTable();
         }
 
-        public InvSystem(string name, float investedAmount, int totalTerms/*,
-        //Currency currency,
-        RatesTable ratesTable*/
-        ) {
+        public InvSystem(string name, float investedAmount, int totalTerms/*, RatesTable ratesTable/*, Currency currency*/)
+        {
             this._name = name;
             this._investedAmount = investedAmount;
             this._totalTerms = totalTerms;
             //this._currency = _currency;
-            //this._ratesTable = ratesTable;
         }
 
         public string name
@@ -80,6 +76,12 @@ namespace Proy1_Diseno_InvestSys.Model
         {
             get { return _annualRate; }
             set { _annualRate = value; }
+        }
+
+        public object ratesTable 
+        {
+            get { return _ratesTable; }
+            set { _ratesTable = value; } 
         }
 
         /*public Currency currency
