@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Controller
 {
-    class ClassBasura1
-    {
+    interface Logger {
+        void log(string data);
     }
 }

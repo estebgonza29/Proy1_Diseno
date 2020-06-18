@@ -17,18 +17,15 @@ namespace Proy1_Diseno_InvestSys.Model
         protected float minimumAmount = 0;
         protected float totalProductions = 0;
         protected float annualRate = 1;
-        //protected Currency currency;
-        //protected RatesTable ratesTable;
+        protected Currency currency;
+        protected RatesTable ratesTable;
 
-        public InvSystem(string name, float investedAmount, int totalTerms
-        //Currency currency,
-        //RatesTable ratesTable
-        ) {
+        public InvSystem(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) {
             this.name = name;
             this.investedAmount = investedAmount;
             this.totalTerms = totalTerms;
-            //this.currency = currency;
-            //this.ratesTable = ratesTable;
+            this.currency = currency;
+            this.ratesTable = ratesTable;
         }
 
         protected InvSystem()

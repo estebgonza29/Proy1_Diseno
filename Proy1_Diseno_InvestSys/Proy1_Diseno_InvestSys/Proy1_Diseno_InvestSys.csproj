@@ -49,7 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\ClassBasura1.cs" />
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\CSVLogger.cs" />
+    <Compile Include="Controller\Currency.cs" />
+    <Compile Include="Controller\DTOData.cs" />
+    <Compile Include="Controller\InvestmentType.cs" />
+    <Compile Include="Controller\Logger.cs" />
+    <Compile Include="Controller\XMLLogger.cs" />
     <Compile Include="Model\AgreedRate.cs" />
     <Compile Include="Model\AgreeRateBuilder.cs" />
     <Compile Include="Model\CurrentRatesBuilder.cs" />

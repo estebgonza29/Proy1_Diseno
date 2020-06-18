@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    class RatesTable
+    public class RatesTable
     {
         private int _rows;
         public int rows
