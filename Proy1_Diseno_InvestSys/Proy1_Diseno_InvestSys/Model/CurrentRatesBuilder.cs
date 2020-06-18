@@ -8,11 +8,16 @@ namespace Proy1_Diseno_InvestSys.Model
 {
     class CurrentRatesBuilder : RateTableBuilder
     {
-        
+        public CurrentRatesBuilder() : base()
+        {
+            _ratesTable.rows = 5;
+            _ratesTable.columns = 3;
+        }
+
         public void buildTable()
         {
-            _ratesTable = new RatesTable();
-            _ratesTable.addRow();
+            
+
         }
 
         public RatesTable getResult()

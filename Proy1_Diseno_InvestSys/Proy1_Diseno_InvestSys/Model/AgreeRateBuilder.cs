@@ -8,10 +8,15 @@ namespace Proy1_Diseno_InvestSys.Model
 {
     class AgreeRateBuilder : RateTableBuilder
     {
+        public AgreeRateBuilder() : base()
+        {            
+            _ratesTable.rows = 11;
+            _ratesTable.columns = 4;
+        }
+
         public void buildTable()
         {
-            _ratesTable = new RatesTable();
-            _ratesTable.addRow();
+            
         }
 
         public RatesTable getResult()

@@ -8,10 +8,14 @@ namespace Proy1_Diseno_InvestSys.Model
 {
     class TermDepositRatesBuilder : RateTableBuilder
     {
+        public TermDepositRatesBuilder() : base()
+        {
+            _ratesTable.rows = 12;
+            _ratesTable.columns = 3;
+        }
         public void buildTable()
         {
-            _ratesTable = new RatesTable();
-            _ratesTable.addRow();
+            
         }
 
         public RatesTable getResult()

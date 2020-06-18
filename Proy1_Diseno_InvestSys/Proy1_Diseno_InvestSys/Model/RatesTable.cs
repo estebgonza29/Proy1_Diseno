@@ -24,7 +24,7 @@ namespace Proy1_Diseno_InvestSys.Model
         public RatesTable()
         {
             this._rows = 0;
-            this._columns = 2;
+            this._columns = 0;
         }
 
         public void addRow()
