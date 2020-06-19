@@ -12,11 +12,12 @@ namespace Proy1_Diseno_InvestSys.Model
     {
         protected string _name;
         protected int _totalTerms;
-        protected int _minimumTerms = 0;
+        protected int _minimumTerms = 0; 
         protected float _investedAmount;
-        protected float _minimumAmount = 0;
-        protected float _totalProductions = 0;
+        protected float _minimumAmount = 0; 
+        protected float _totalProductions = 0; 
         protected float _annualRate = 1;
+        protected float _finalAmount = 0;
         protected Currency _currency;
         protected RatesTable _ratesTable;
 
@@ -26,7 +27,8 @@ namespace Proy1_Diseno_InvestSys.Model
             _investedAmount = 0;
             _totalTerms = 0;
             _ratesTable = new RatesTable();
-        }
+            _currency = new Currency();
+    }
 
         public InvSystem(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) {
             this._name = name;
@@ -76,6 +78,12 @@ namespace Proy1_Diseno_InvestSys.Model
         {
             get { return _annualRate; }
             set { _annualRate = value; }
+        }
+
+        public float finalAmount
+        {
+            get { return _finalAmount; }
+            set { _finalAmount = value; }
         }
 
         public Currency currency

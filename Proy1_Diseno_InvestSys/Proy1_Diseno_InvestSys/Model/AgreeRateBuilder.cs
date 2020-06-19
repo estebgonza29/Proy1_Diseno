@@ -12,7 +12,7 @@ namespace Proy1_Diseno_InvestSys.Model
     {
         public AgreeRateBuilder() : base()
         {            
-            _ratesTable.rows = 11;
+            _ratesTable.rows = 7;
             _ratesTable.columns = 4;
         }
 
