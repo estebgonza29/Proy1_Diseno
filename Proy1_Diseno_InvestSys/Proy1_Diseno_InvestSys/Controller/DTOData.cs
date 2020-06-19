@@ -60,5 +60,13 @@ namespace Proy1_Diseno_InvestSys.Controller
             get { return ratesTable; }
             set { ratesTable = value; }
         }
+
+        public string ToString
+        {
+            get
+            {
+
+            }
+        }
     }
 }

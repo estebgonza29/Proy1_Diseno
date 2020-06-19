@@ -10,10 +10,13 @@ namespace Proy1_Diseno_InvestSys.Controller
     class Controller {
         private Controller instance;
         private DTOData dto { get; }
-        private Logger logger;
+        private Logger xmlLogger;
+        private Logger csvLogger;
 
         private Controller() {
             this.dto = new DTOData();
+            xmlLogger = new XMLLogger();
+            csvLogger = new CSVLogger();
         }
 
         public Controller getInstance() {
@@ -48,6 +51,8 @@ namespace Proy1_Diseno_InvestSys.Controller
                 throw new Exception("Invalid investment type");
             }
             invSystem.calculateProduction();
+            xmlLogger.log(dto.ToString);
+            csvLogger.log(dto.ToString);
         }
     }
 }
