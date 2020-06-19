@@ -17,19 +17,27 @@ namespace Proy1_Diseno_InvestSys.Model
                 _minimumTerms = 15;
                 _totalProductions = 0;
 
-                if (currency.Equals("CRC"))
+                if (currency.Equals(Currency.CRC))
                 {
                     posCurrency = 2;
                     _minimumAmount = 100000;
-                } else {
+                } 
+                else if(currency.Equals(Currency.USD))
+                {
                     posCurrency = 3;
                     _minimumAmount = 500;
                 }
+                else
+                {
+                    Console.WriteLine("invalid currency");
+                    throw new ArgumentNullException("currency null") ;
+                }
+
 
                 if (investedAmount < _minimumAmount || totalTerms < _minimumTerms)
                 {
                     Console.WriteLine("No cumple requisitos");
-                    throw new NotImplementedException();
+                    throw new Exception("No cumple requisitos");
                 } 
                 else if (totalTerms >= ratesTable.matrix[(ratesTable.rows - 1)][0])
                 {

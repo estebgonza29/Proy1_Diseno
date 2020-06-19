@@ -100,7 +100,12 @@ namespace Proy1_Diseno_InvestSys.Model
 
         public bool checkValidCurrency()
         {
-            return true;
+            if (_currency.Equals(Currency.CRC))
+                return true;
+            else if (_currency.Equals(Currency.USD))
+                return true;
+            else
+                return false;
         }
 
         public abstract void calculateProduction();

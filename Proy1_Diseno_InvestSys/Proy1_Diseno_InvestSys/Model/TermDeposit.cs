@@ -24,7 +24,7 @@ namespace Proy1_Diseno_InvestSys.Model
             if (totalTerms < _minimumTerms && investedAmount < _minimumAmount)
             {
                 Console.WriteLine("No cumple requisitos");
-                throw new NotImplementedException();
+                throw new Exception("No cumple requisitos");
             }
 
             else if (totalTerms >= ratesTable.matrix[(ratesTable.rows - 1)][0])

@@ -19,7 +19,7 @@ namespace Proy1_Diseno_InvestSys.Model
             if (investedAmount < _minimumAmount)
             {
                 Console.WriteLine("No cumple monto minimo");
-                throw new NotImplementedException();
+                throw new Exception("No cumple monto minimo");
             }
             else if (investedAmount >= ratesTable.matrix[(ratesTable.rows - 1)][0])
             {
