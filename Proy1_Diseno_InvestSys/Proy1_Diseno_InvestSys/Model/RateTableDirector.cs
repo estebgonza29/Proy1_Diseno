@@ -12,7 +12,7 @@ namespace Proy1_Diseno_InvestSys.Model
         private RateTableBuilder _rateBuilder;
 
         public RateTableDirector(RateTableBuilder builder) {
-            if (builder == null) throw new Exception("Builder cannot be null");
+            if (builder == null) throw new Exception("Builder cannot be null.");
             this._rateBuilder = builder;
         }
 
