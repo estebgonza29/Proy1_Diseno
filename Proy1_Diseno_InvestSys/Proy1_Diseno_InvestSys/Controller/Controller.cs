@@ -51,8 +51,8 @@ namespace Proy1_Diseno_InvestSys.Controller
                 throw new Exception("Invalid investment type");
             }
             invSystem.calculateProduction();
-            xmlLogger.log(dto.ToString);
-            csvLogger.log(dto.ToString);
+            xmlLogger.log(dto.ToString());
+            csvLogger.log(dto.ToString());
         }
     }
 }

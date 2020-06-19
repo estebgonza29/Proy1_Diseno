@@ -61,12 +61,15 @@ namespace Proy1_Diseno_InvestSys.Controller
             set { ratesTable = value; }
         }
 
-        public string ToString
-        {
-            get
-            {
-
-            }
+        public override string ToString() {
+                string val = "";
+                val += "name:" + name + ",";
+                val += "Investment type:" + investmentSystem.ToString() + ",";
+                val += "Invested amount:" + InvestedAmount + ",";
+                val += "Total terms:" + totalTerms + ",";
+                val += "Currency:" + currency.ToString() + ",";
+                val += "Retention:" + retention + ",";
+                return val;
         }
     }
 }
