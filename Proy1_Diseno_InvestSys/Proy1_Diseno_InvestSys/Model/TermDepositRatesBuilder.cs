@@ -12,7 +12,7 @@ namespace Proy1_Diseno_InvestSys.Model
     {
         public TermDepositRatesBuilder() : base()
         {
-            _ratesTable.rows = 12;
+            _ratesTable.rows = 7;
             _ratesTable.columns = 3;
         }
         public void buildTable()

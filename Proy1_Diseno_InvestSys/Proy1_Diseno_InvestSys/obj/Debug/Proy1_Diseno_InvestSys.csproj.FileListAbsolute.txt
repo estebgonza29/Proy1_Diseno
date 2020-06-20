@@ -11,3 +11,6 @@ C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.exe
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.pdb
+C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\JSonFiles\AgreedRate.json
+C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
