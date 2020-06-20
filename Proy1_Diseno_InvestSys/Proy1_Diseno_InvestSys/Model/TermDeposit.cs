@@ -46,7 +46,7 @@ namespace Proy1_Diseno_InvestSys.Model
                 }
             }
 
-            for (int i = 1; i < totalTerms; i++)
+            for (int i = 1; i <= totalTerms; i++)
             {
                 totalProductions += investedAmount * (_annualRate / 360);
             }
