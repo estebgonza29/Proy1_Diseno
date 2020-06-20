@@ -16,7 +16,7 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable.columns = 4;
         }
 
-        public void buildTable()
+        public override void buildTable()
         {            
             JToken token = JObject.Parse(File.ReadAllText(@"JSonFiles/AgreedRate.json"));
             Object[][] listaDatos = (token.SelectToken("Data")).ToObject<Object[][]>(); 
@@ -25,6 +25,7 @@ namespace Proy1_Diseno_InvestSys.Model
                 for(int j = 0; j < _ratesTable.columns; j++)
                 {
                     _ratesTable.matrix[i][j] = (float)listaDatos[i][j];
+                    Console.WriteLine(_ratesTable.matrix[i][j]);
                 }
             }
             

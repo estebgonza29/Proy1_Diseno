@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Model
 {
-    abstract class RateTableBuilder
+    public abstract class RateTableBuilder
     {
         protected RatesTable _ratesTable;
 
@@ -19,9 +19,6 @@ namespace Proy1_Diseno_InvestSys.Model
             get { return _ratesTable; }
             set { _ratesTable = value; }
         }
-        public void buildTable()
-        {
-            
-        }
+        public abstract void buildTable();
     }
 }

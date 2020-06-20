@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
@@ -16,15 +17,37 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable.columns = 3;
         }
 
-        public void buildTable()
+        public override void buildTable()
         {
-            JToken token = JObject.Parse(File.ReadAllText(@"JSonFiles/CurrentRate.json"));
-            Object[][] listaDatos = (token.SelectToken("Data")).ToObject<Object[][]>();
-            for (int i = 0; i < _ratesTable.rows; i++)
-            {
-                for (int j = 0; j < _ratesTable.columns; j++)
-                {
-                    _ratesTable.matrix[i][j] = (float)listaDatos[i][j];
+            List<float> L1 = new List<float>();
+            L1.Add(25000);
+            L1.Add(500000);
+            L1.Add(0.01f);
+            List<float> L2 = new List<float>();
+            L2.Add(500001);
+            L2.Add(1000000);
+            L2.Add(0.02f);
+            List<float> L3 = new List<float>();
+            L3.Add(1000001);
+            L3.Add(2500000);
+            L3.Add(0.0225f);
+            List<float> L4 = new List<float>();
+            L4.Add(2500001);
+            L4.Add(10000000);
+            L4.Add(0.025f);
+            List<float> L5 = new List<float>();
+            L5.Add(10000001);
+            L5.Add(float.PositiveInfinity);
+            L5.Add(0.0275f);
+            _ratesTable.matrix.Add(L1);
+            _ratesTable.matrix.Add(L2);
+            _ratesTable.matrix.Add(L3);
+            _ratesTable.matrix.Add(L4);
+            _ratesTable.matrix.Add(L5);
+
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 3; j++) {
+                    Console.WriteLine(_ratesTable.matrix[i][j]);
                 }
             }
         }
