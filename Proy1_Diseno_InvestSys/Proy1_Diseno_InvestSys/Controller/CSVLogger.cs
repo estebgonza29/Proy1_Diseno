@@ -12,6 +12,7 @@ namespace Proy1_Diseno_InvestSys.Controller
             {
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter("Log.csv", true)) {
                     string[] lines = data.Split(',');
+                    Console.WriteLine(data.ToString());
                     string line = "";
                     for (int i = 0; i < lines.Length; i++) {
                         if (i == lines.Length - 1) line += lines[i].Split(':')[1];

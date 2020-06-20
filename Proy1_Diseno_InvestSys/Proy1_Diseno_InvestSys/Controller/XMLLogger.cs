@@ -26,32 +26,34 @@ namespace Proy1_Diseno_InvestSys.Controller
                 );
             }
             catch (Exception e) {
+                Console.WriteLine("XML Error");
                 Console.WriteLine(e.Message);
             }
 
-            string[] nodes = data.Split(',');
-            string[] names = new string[nodes.Length];
-            string[] values = new string[nodes.Length];
-            for (int i = 0; i < nodes.Length; i++) {
-                string[] temp = nodes[i].Split(':');
-                names[i] = temp[0];
-                values[i] = temp[1];
-            }
+            try { 
+                string[] nodes = data.Split(',');
+                string[] names = new string[nodes.Length];
+                string[] values = new string[nodes.Length];
+                for (int i = 0; i < nodes.Length; i++) {
+                    string[] temp = nodes[i].Split(':');
+                    names[i] = temp[0];
+                    values[i] = temp[1];
+                }
 
-            XmlNode inv = doc.CreateElement("Investment");
-            for (int i = 0; i < nodes.Length; i++)
-            {
-                XmlNode node = doc.CreateElement(names[i]);
-                node.InnerText = values[i];
-                inv.AppendChild(node);
-            }
+                XmlNode inv = doc.CreateElement("Investment");
+                for (int i = 0; i < nodes.Length; i++)
+                {
+                    XmlNode node = doc.CreateElement(names[i]);
+                    node.InnerText = values[i];
+                    inv.AppendChild(node);
+                }
 
-            doc.DocumentElement.AppendChild(inv);
-            try
-            {
+                doc.DocumentElement.AppendChild(inv);
+            
                 doc.Save("Log.xml");
             }
             catch (Exception e) {
+                Console.WriteLine("Error XML");
                 Console.WriteLine(e.Message);
             }
         }

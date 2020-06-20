@@ -56,8 +56,9 @@ namespace Proy1_Diseno_InvestSys.Controller
             }
             invSystem.calculateProduction();
 
-            /*xmlLogger.log(dto.ToString());
-            csvLogger.log(dto.ToString());*/
+
+            xmlLogger.log(dto.ToString());
+            csvLogger.log(dto.ToString());
         }
 
         public List<string> getCurrencies() {

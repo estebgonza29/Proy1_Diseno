@@ -67,8 +67,8 @@ namespace Proy1_Diseno_InvestSys.Controller
                 val += "Investment type:" + investmentSystem.ToString() + ",";
                 val += "Invested amount:" + InvestedAmount + ",";
                 val += "Total terms:" + totalTerms + ",";
-                val += "Currency:" + currency.ToString() + ",";
-                val += "Retention:" + retention + ",";
+                val += "Currency:" + currency.ToString();
+                if (retention != 0) val += ",Retention:" + retention;
                 return val;
         }
     }

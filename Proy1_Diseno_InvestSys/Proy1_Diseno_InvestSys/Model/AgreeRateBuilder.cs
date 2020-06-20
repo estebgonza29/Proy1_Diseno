@@ -16,7 +16,7 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable.columns = 4;
         }
 
-        public void buildTable()
+        public override void buildTable()
         {
             List<float> L1 = new List<float>();
             L1.Add(15);
