@@ -41,7 +41,8 @@ namespace Proy1_Diseno_InvestSys.Controller
                 dto.RatesTable = director.getTable();
             }
             catch (Exception e) {
-                throw new Exception("Invalid investment type\n" + e.Message);
+                Console.WriteLine(e.Message);
+                throw new Exception("Invalid investment type");
             }
         }
 
@@ -54,11 +55,10 @@ namespace Proy1_Diseno_InvestSys.Controller
             else {
                 throw new Exception("Invalid investment type");
             }
-            invSystem.calculateProduction();
+            invSystem.calculateProduction(dto);
 
-
-            xmlLogger.log(dto.ToString());
-            csvLogger.log(dto.ToString());
+            /*xmlLogger.log(dto.ToString());
+            csvLogger.log(dto.ToString());*/
         }
 
         public List<string> getCurrencies() {

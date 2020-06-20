@@ -10,7 +10,9 @@ namespace Proy1_Diseno_InvestSys.Model
 {
     public class Current : InvSystem
     {
-        public Current(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) : base(name, investedAmount, totalTerms, currency, ratesTable) {
+        public Current(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) : base(name, investedAmount, totalTerms, currency, ratesTable) { }
+        public override void calculateProduction(DTOData dto)
+        {
             _minimumAmount = 25000;
             _totalProductions = 0;
         }
@@ -42,7 +44,8 @@ namespace Proy1_Diseno_InvestSys.Model
             {
                 totalProductions += investedAmount * (_annualRate / 360);
             }
-            _finalAmount = totalProductions + investedAmount;
+            dto.AnnualRate = _annualRate;
+            dto.TotalProductions = _totalProductions;
         }
     }
 }

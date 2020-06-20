@@ -17,7 +17,6 @@ namespace Proy1_Diseno_InvestSys.Model
         protected float _minimumAmount = 0; 
         protected float _totalProductions = 0; 
         protected float _annualRate = 1;
-        protected float _finalAmount = 0;
         protected Currency _currency;
         protected RatesTable _ratesTable;
 
@@ -80,12 +79,6 @@ namespace Proy1_Diseno_InvestSys.Model
             set { _annualRate = value; }
         }
 
-        public float finalAmount
-        {
-            get { return _finalAmount; }
-            set { _finalAmount = value; }
-        }
-
         public Currency currency
         {
             get { return _currency; }
@@ -108,6 +101,6 @@ namespace Proy1_Diseno_InvestSys.Model
                 return false;
         }
 
-        public abstract void calculateProduction();
+        public abstract void calculateProduction(DTOData dto);
     }
 }

@@ -10,7 +10,7 @@ namespace Proy1_Diseno_InvestSys.Model
     public class AgreedRate : InvSystem
     {
         public AgreedRate(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) : base(name, investedAmount, totalTerms, currency, ratesTable) {}
-        public override void calculateProduction()
+        public override void calculateProduction(DTOData dto)
         {
             {
                 int posCurrency;
@@ -57,7 +57,8 @@ namespace Proy1_Diseno_InvestSys.Model
                 {
                     totalProductions += investedAmount * (i / 360);
                 }
-                _finalAmount = totalProductions + investedAmount;
+                dto.AnnualRate = _annualRate;
+                dto.TotalProductions = _totalProductions;
             }
         }
     }

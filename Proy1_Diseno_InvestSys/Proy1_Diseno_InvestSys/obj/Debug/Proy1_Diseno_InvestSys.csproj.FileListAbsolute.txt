@@ -48,3 +48,4 @@ D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_Invest
 D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
 D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.exe
 D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.pdb
+C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.View.GUI.resources
