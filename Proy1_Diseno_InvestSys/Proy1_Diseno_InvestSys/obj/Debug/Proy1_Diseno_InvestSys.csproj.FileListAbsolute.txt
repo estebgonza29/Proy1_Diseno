@@ -31,4 +31,20 @@ C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Di
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\it\DotLiquid.resources.dll
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
-C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.View.GUI.resources
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\JSonFiles\AgreedRate.json
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.exe.config
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.exe
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.pdb
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\DotLiquid.dll
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.dll
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\DotLiquid.xml
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\it\DotLiquid.resources.dll
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csprojAssemblyReference.cache
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.Properties.Resources.resources
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.View.GUI.resources
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.GenerateResource.cache
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CoreCompileInputs.cache
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.exe
+D:\Users\josue\Documents\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.pdb

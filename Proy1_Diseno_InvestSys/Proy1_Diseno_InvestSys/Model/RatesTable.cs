@@ -33,8 +33,6 @@ namespace Proy1_Diseno_InvestSys.Model
 
         public void addRow()
         {
-
-
             _rows += 1;
         }
     }

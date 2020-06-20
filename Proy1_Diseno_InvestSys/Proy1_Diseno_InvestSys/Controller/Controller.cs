@@ -9,7 +9,7 @@ namespace Proy1_Diseno_InvestSys.Controller
 {
     public class Controller {
         private static Controller instance;
-        private DTOData dto { get; }
+        private DTOData dto;
         private Logger xmlLogger;
         private Logger csvLogger;
 
@@ -22,6 +22,10 @@ namespace Proy1_Diseno_InvestSys.Controller
         public static Controller getInstance() {
             if (instance == null) instance = new Controller();
             return instance;
+        }
+
+        public DTOData DTO {
+            get { return this.dto; }
         }
 
         public void createRatesTable() {
@@ -43,6 +47,7 @@ namespace Proy1_Diseno_InvestSys.Controller
         }
 
         public void calculateProduction() {
+            createRatesTable();
             InvSystem invSystem;
             if (dto.InvestmentSystem == InvestmentType.AGREEDRATE) invSystem = new AgreedRate(dto.Name, dto.InvestedAmount, dto.TotalTerms, dto.Currency, dto.RatesTable);
             else if (dto.InvestmentSystem == InvestmentType.CURRENT) invSystem = new Current(dto.Name, dto.InvestedAmount, dto.TotalTerms, dto.Currency, dto.RatesTable);

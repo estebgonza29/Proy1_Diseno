@@ -33,6 +33,7 @@ namespace Proy1_Diseno_InvestSys.Model
                     throw new ArgumentNullException("currency null") ;
                 }
 
+                Console.WriteLine(ratesTable.matrix[ratesTable.rows - 1][0]);
 
                 if (investedAmount < _minimumAmount || totalTerms < _minimumTerms)
                 {

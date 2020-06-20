@@ -120,6 +120,7 @@
             this.cmBoxInvSystem.Name = "cmBoxInvSystem";
             this.cmBoxInvSystem.Size = new System.Drawing.Size(226, 31);
             this.cmBoxInvSystem.TabIndex = 10;
+            this.cmBoxInvSystem.SelectedIndexChanged += new System.EventHandler(this.cmBoxInvSystem_SelectedIndexChanged);
             // 
             // cmBoxCurrency
             // 
@@ -179,6 +180,7 @@
             this.btnCalculate.Size = new System.Drawing.Size(105, 99);
             this.btnCalculate.TabIndex = 16;
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // label7
             // 

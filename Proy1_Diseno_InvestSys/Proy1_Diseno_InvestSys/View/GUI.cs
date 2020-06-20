@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Proy1_Diseno_InvestSys.Controller;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -68,6 +70,64 @@ namespace Proy1_Diseno_InvestSys.View
 
         public void AddInvSystem(string element) {
             this.cmBoxInvSystem.Items.Add(element);
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text.Length > 0)
+            {
+                if (cmBoxInvSystem.SelectedIndex >= 0)
+                {
+                    if (txtInvAmount.Text.Length > 0)
+                    {
+                        if (txtTerms.Text.Length > 0)
+                        {
+                            if (cmBoxCurrency.SelectedIndex >= 0)
+                            {
+                                try
+                                {
+                                    controller.DTO.Name = txtName.Text;
+                                    controller.DTO.InvestmentSystem = (InvestmentType)Enum.Parse(typeof(InvestmentType), cmBoxInvSystem.SelectedItem.ToString());
+                                    controller.DTO.InvestedAmount = float.Parse(txtInvAmount.Text);
+                                    controller.DTO.TotalTerms = int.Parse(txtTerms.Text);
+                                    controller.DTO.Currency = (Currency)Enum.Parse(typeof(Currency), cmBoxCurrency.SelectedItem.ToString());
+                                    controller.calculateProduction();
+                                    txtRes.Text = controller.DTO.ToString();
+                                }
+                                catch (Exception ex) 
+                                {
+                                    MessageBox.Show("Error al intentar hacer el cálculo: \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else 
+                            {
+                                MessageBox.Show("Debe seleccionar una moneda", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        else 
+                        {
+                            MessageBox.Show("Cantidad de plazos inválida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Monto mínimo inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else 
+                {
+                    MessageBox.Show("Debe seleccionar un sistema de inversión", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Nombre inválido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cmBoxInvSystem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        
         }
     }
 }
