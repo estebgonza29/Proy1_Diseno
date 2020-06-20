@@ -1,6 +1,9 @@
 ﻿using Proy1_Diseno_InvestSys.Controller;
 using Proy1_Diseno_InvestSys.View;
 using System;
+using System.ComponentModel;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleView
 {
@@ -11,6 +14,10 @@ namespace ConsoleView
         public ConsoleView() : base()
         {
             instance = controller;
+            List<string> currencies = instance.getCurrencies();
+            List<string> investments = instance.getInvestments();
+            //for (int i = 0; i < currencies.Count; i++) cmBoxCurrency.Items.Add(currencies.ElementAt(i));
+            //for (int i = 0; i < investments.Count; i++) cmBoxInvSystem.Items.Add(investments.ElementAt(i)); ;
         }
 
         static void Main(string[] args)

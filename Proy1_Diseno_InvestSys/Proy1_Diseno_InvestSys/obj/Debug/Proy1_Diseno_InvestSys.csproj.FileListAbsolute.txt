@@ -31,3 +31,4 @@ C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Di
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\it\DotLiquid.resources.dll
 C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
+C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.View.GUI.resources
