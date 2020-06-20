@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Controller
 {
-    class DTOData {
+    public class DTOData {
         private string name;
         private InvestmentType investmentSystem;
         private float investedAmount;
