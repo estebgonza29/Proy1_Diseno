@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Proy1_Diseno_InvestSys.View
 {
@@ -16,9 +17,12 @@ namespace Proy1_Diseno_InvestSys.View
             gui.Show();
         }
 
-        public int main() {
-            
-            return 0;
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new GUI());
         }
     }
 }
