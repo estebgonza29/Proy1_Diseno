@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Proy1_Diseno_InvestSys.View.GUIDisplay</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotLiquid, Version=2.0.351.0, Culture=neutral, PublicKeyToken=82e46016ecf9f07c, processorArchitecture=MSIL">
       <HintPath>..\packages\DotLiquid.2.0.351\lib\net45\DotLiquid.dll</HintPath>

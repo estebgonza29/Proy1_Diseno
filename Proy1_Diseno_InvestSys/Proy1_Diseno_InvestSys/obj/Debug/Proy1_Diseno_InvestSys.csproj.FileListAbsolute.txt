@@ -14,3 +14,20 @@ C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\JSonFiles\AgreedRate.json
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.dll
 C:\Users\dario\Desktop\Diseño\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csprojAssemblyReference.cache
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.Properties.Resources.resources
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.View.GUI.resources
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.GenerateResource.cache
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CoreCompileInputs.cache
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.exe
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.pdb
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\JSonFiles\AgreedRate.json
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.exe.config
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.exe
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Proy1_Diseno_InvestSys.pdb
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\DotLiquid.dll
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\DotLiquid.xml
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\bin\Debug\it\DotLiquid.resources.dll
+C:\Users\Esteban G\Documents\GitHub\Proy1_Diseno\Proy1_Diseno_InvestSys\Proy1_Diseno_InvestSys\obj\Debug\Proy1_Diseno_InvestSys.csproj.CopyComplete
