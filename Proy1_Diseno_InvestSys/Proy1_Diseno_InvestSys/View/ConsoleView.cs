@@ -84,7 +84,7 @@ namespace ConsoleView
                     numCurrency = Console.ReadLine();
                 }
                 if (numCurrency == "1") {
-                    Console.Read();
+                    //Console.Read();
                     Console.Write("Ingrese los siguientes datos:\nNombre: ");
                     name = Console.ReadLine();
                     Console.Write("Plazo de inversión en días (Debe ser un número entero, mayor o igual a 15): ");
@@ -106,7 +106,7 @@ namespace ConsoleView
                 }
                 else if (numCurrency == "2")
                 {
-                    Console.Read();
+                    //Console.Read();
                     Console.Write("Ingrese los siguientes datos:\nNombre: ");
                     name = Console.ReadLine();
                     Console.Write("Plazo de inversión en días (Debe ser un número entero, mayor o igual a 15 días): ");
