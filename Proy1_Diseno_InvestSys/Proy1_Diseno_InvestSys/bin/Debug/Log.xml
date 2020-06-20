@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Investments>
   <Investment>
-    <Cliente>Josue</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_50000</Monto_de_ahorro_de_inversión>
-    <Plazo>35</Plazo>
+    <Cliente>asd</Cliente>
+    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
+    <Plazo>31</Plazo>
     <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>1%</Interés_anual_correspondiente>
-    <Intereses_ganados>47,22223</Intereses_ganados>
-    <Saldo_final>50047,22</Saldo_final>
+    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
+    <Intereses_ganados>1722,222</Intereses_ganados>
+    <Saldo_final>1001722,22</Saldo_final>
   </Investment>
   <Investment>
     <Cliente>Disney_Landia_Rodríguez_Juárez</Cliente>
@@ -15,61 +15,34 @@
     <Plazo>31</Plazo>
     <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
     <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
-    <Intereses_ganados>1666,666</Intereses_ganados>
-    <Saldo_final>1001667</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>Disney_Landia_Rodríguez_Suárez</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
-    <Plazo>31</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
-    <Intereses_ganados>1722,222</Intereses_ganados>
-    <Saldo_final>1001722</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>Josue_Siles</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_50000</Monto_de_ahorro_de_inversión>
-    <Plazo>35</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>1%</Interés_anual_correspondiente>
-    <Intereses_ganados>48,61112</Intereses_ganados>
-    <Saldo_final>50048,6111221313</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>Josue_Siles</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
-    <Plazo>31</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
-    <Intereses_ganados>1722,222</Intereses_ganados>
-    <Saldo_final>1001722,22192383</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>josue</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
-    <Plazo>31</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
-    <Intereses_ganados>1722,222</Intereses_ganados>
-    <Saldo_final>000,000,000,000.00</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>asd</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
-    <Plazo>31</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
-    <Intereses_ganados>1722,222</Intereses_ganados>
-    <Saldo_final>1001722</Saldo_final>
-  </Investment>
-  <Investment>
-    <Cliente>j</Cliente>
-    <Monto_de_ahorro_de_inversión>CRC_1000000</Monto_de_ahorro_de_inversión>
-    <Plazo>31</Plazo>
-    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
-    <Interés_anual_correspondiente>2%</Interés_anual_correspondiente>
     <Intereses_ganados>1722,222</Intereses_ganados>
     <Saldo_final>1001722,22</Saldo_final>
+  </Investment>
+  <Investment>
+    <Cliente>Email_Suárez_Barboza</Cliente>
+    <Monto_de_ahorro_de_inversión>CRC_2650000</Monto_de_ahorro_de_inversión>
+    <Plazo>21</Plazo>
+    <Sistema_de_ahorro_de_inversión>CURRENT</Sistema_de_ahorro_de_inversión>
+    <Interés_anual_correspondiente>2,5%</Interés_anual_correspondiente>
+    <Intereses_ganados>3864,584</Intereses_ganados>
+    <Saldo_final>2653864,58</Saldo_final>
+  </Investment>
+  <Investment>
+    <Cliente>Yam_Clock_Alejandro_Pizarro_Rojas</Cliente>
+    <Monto_de_ahorro_de_inversión>CRC_1200000</Monto_de_ahorro_de_inversión>
+    <Plazo>56</Plazo>
+    <Sistema_de_ahorro_de_inversión>AGREEDRATE</Sistema_de_ahorro_de_inversión>
+    <Interés_anual_correspondiente>4,94%</Interés_anual_correspondiente>
+    <Intereses_ganados>0</Intereses_ganados>
+    <Saldo_final>1200000</Saldo_final>
+  </Investment>
+  <Investment>
+    <Cliente>Yam_Clock_Alejandro_Pizzaro_Rojas</Cliente>
+    <Monto_de_ahorro_de_inversión>CRC_1200000</Monto_de_ahorro_de_inversión>
+    <Plazo>56</Plazo>
+    <Sistema_de_ahorro_de_inversión>AGREEDRATE</Sistema_de_ahorro_de_inversión>
+    <Interés_anual_correspondiente>4,94%</Interés_anual_correspondiente>
+    <Intereses_ganados>9221,332</Intereses_ganados>
+    <Saldo_final>1209221,33</Saldo_final>
   </Investment>
 </Investments>

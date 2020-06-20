@@ -58,9 +58,9 @@ namespace Proy1_Diseno_InvestSys.Model
                     }
                 }
 
-                for (int i = 1; i < totalTerms; i++)
+                for (int i = 1; i <= totalTerms; i++)
                 {
-                    totalProductions += investedAmount * (i / 360);
+                    totalProductions += _investedAmount * (_annualRate / 360);
                 }
                 dto.AnnualRate = _annualRate;
                 dto.TotalProductions = _totalProductions;
