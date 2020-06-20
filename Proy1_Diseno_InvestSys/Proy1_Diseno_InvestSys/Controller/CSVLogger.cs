@@ -11,12 +11,11 @@ namespace Proy1_Diseno_InvestSys.Controller
             try
             {
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter("Log.csv", true)) {
-                    string[] lines = data.Split(',');
-                    Console.WriteLine(data.ToString());
+                    string[] lines = data.Split('\n');
                     string line = "";
                     for (int i = 0; i < lines.Length; i++) {
-                        if (i == lines.Length - 1) line += lines[i].Split(':')[1];
-                        else line += lines[i].Split(':')[1] + ',';
+                        if (i == lines.Length - 1) line += lines[i].Split(':')[1].Replace(',', '.');
+                        else line += lines[i].Split(':')[1].Replace(',', '.') + ',';
                     }
                     file.WriteLine(line);
                 }

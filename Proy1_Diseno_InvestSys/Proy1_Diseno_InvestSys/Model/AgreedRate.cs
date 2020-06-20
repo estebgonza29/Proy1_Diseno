@@ -35,11 +35,16 @@ namespace Proy1_Diseno_InvestSys.Model
 
                 Console.WriteLine(ratesTable.matrix[ratesTable.rows - 1][0]);
 
-                if (investedAmount < _minimumAmount || totalTerms < _minimumTerms)
+                if (investedAmount < _minimumAmount)
                 {
-                    Console.WriteLine("No cumple requisitos");
-                    throw new Exception("No cumple requisitos");
-                } 
+                    Console.WriteLine("El monto ingresado es menor al monto mínimo");
+                    throw new Exception("El monto ingresado es menor al monto mínimo");
+
+                } else if (totalTerms < _minimumTerms)
+                {
+                    Console.WriteLine("El plazo ingresado es menor al plazo mínimo");
+                    throw new Exception("El plazo ingresado es menor al plazo mínimo");
+                }
                 else if (totalTerms >= ratesTable.matrix[(ratesTable.rows - 1)][0])
                 {
                     _annualRate = (float)ratesTable.matrix[(ratesTable.rows - 1)][posCurrency];

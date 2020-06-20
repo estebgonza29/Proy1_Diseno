@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7850B5F9-AA4A-4BED-BA92-4AB531A0EFCF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>Proy1_Diseno_InvestSys</RootNamespace>
     <AssemblyName>Proy1_Diseno_InvestSys</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleView.ConsoleView</StartupObject>
+    <StartupObject>Proy1_Diseno_InvestSys.View.GUIDisplay</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotLiquid, Version=2.0.351.0, Culture=neutral, PublicKeyToken=82e46016ecf9f07c, processorArchitecture=MSIL">

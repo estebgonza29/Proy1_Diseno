@@ -23,7 +23,7 @@ namespace Proy1_Diseno_InvestSys.View
             List<string> currencies = controller.getCurrencies();
             List<string> investments = controller.getInvestments();
             for (int i = 0; i < currencies.Count; i++) cmBoxCurrency.Items.Add(currencies.ElementAt(i));
-            for (int i = 0; i < investments.Count; i++) cmBoxInvSystem.Items.Add(investments.ElementAt(i));
+            for (int i = 0; i < investments.Count; i++) cmBoxInvSystem.Items.Add(investments.ElementAt(i).Replace('_', ' '));
         }
 
         private void GUIDisplay_Load(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace Proy1_Diseno_InvestSys.View
                                     controller.DTO.TotalTerms = int.Parse(txtTerms.Text);
                                     controller.DTO.Currency = (Currency)Enum.Parse(typeof(Currency), cmBoxCurrency.SelectedItem.ToString());
                                     controller.calculateProduction();
-                                    txtRes.Text = controller.DTO.ToString();
+                                    txtRes.Text = controller.DTO.ToString().Replace("\n", "\r\n").Replace(":", ": ");
                                 }
                                 catch (Exception ex) 
                                 {

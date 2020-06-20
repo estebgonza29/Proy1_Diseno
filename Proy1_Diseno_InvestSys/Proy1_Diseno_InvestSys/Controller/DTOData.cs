@@ -78,14 +78,16 @@ namespace Proy1_Diseno_InvestSys.Controller
         }
 
         public override string ToString() {
-                string val = "";
-                val += "name:" + name + ",";
-                val += "Investment type:" + investmentSystem.ToString() + ",";
-                val += "Invested amount:" + InvestedAmount + ",";
-                val += "Total terms:" + totalTerms + ",";
-                val += "Currency:" + currency.ToString();
-                if (retention != 0) val += ",Retention:" + retention;
-                return val;
+            string val = "";
+            val += "Cliente:" + name + "\n";
+            val += "Monto de ahorro de inversión:" + currency.ToString() + " " + InvestedAmount + "\n";
+            val += "Plazo:" + totalTerms + "\n";
+            val += "Sistema de ahorro de inversión:" + investmentSystem.ToString().Replace('_', ' ') + "\n";
+            val += "Interés anual correspondiente:" + (annualRate * 100) +  "%" + "\n";
+            val += "Intereses ganados:" + totalProductions + "\n";
+            if (retention != 0) val += "Impuesto de renta:" + (totalProductions * retention) + "\n";
+            val += "Saldo final:" + Math.Round(((double)(totalProductions + investedAmount)), 2);
+            return val;
         }
     }
 }

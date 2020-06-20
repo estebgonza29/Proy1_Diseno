@@ -40,9 +40,9 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtInvAmount = new System.Windows.Forms.TextBox();
             this.txtTerms = new System.Windows.Forms.TextBox();
-            this.txtRes = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtRes = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -160,16 +160,6 @@
             this.txtTerms.TabIndex = 14;
             this.txtTerms.TextChanged += new System.EventHandler(this.cmBoxTerms_TextChanged);
             // 
-            // txtRes
-            // 
-            this.txtRes.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtRes.Location = new System.Drawing.Point(517, 113);
-            this.txtRes.Multiline = true;
-            this.txtRes.Name = "txtRes";
-            this.txtRes.Size = new System.Drawing.Size(391, 281);
-            this.txtRes.TabIndex = 15;
-            // 
             // btnCalculate
             // 
             this.btnCalculate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCalculate.BackgroundImage")));
@@ -192,6 +182,16 @@
             this.label7.Size = new System.Drawing.Size(86, 23);
             this.label7.TabIndex = 17;
             this.label7.Text = "Resultado:";
+            // 
+            // txtRes
+            // 
+            this.txtRes.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtRes.Location = new System.Drawing.Point(517, 113);
+            this.txtRes.Multiline = true;
+            this.txtRes.Name = "txtRes";
+            this.txtRes.Size = new System.Drawing.Size(391, 281);
+            this.txtRes.TabIndex = 15;
             // 
             // GUI
             // 
@@ -234,8 +234,8 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtInvAmount;
         private System.Windows.Forms.TextBox txtTerms;
-        private System.Windows.Forms.TextBox txtRes;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtRes;
     }
 }

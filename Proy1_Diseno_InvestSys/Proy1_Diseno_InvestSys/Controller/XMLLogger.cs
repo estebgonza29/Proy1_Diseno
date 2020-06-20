@@ -26,12 +26,11 @@ namespace Proy1_Diseno_InvestSys.Controller
                 );
             }
             catch (Exception e) {
-                Console.WriteLine("XML Error");
                 Console.WriteLine(e.Message);
             }
 
             try { 
-                string[] nodes = data.Split(',');
+                string[] nodes = data.Split('\n');
                 string[] names = new string[nodes.Length];
                 string[] values = new string[nodes.Length];
                 for (int i = 0; i < nodes.Length; i++) {
@@ -43,8 +42,8 @@ namespace Proy1_Diseno_InvestSys.Controller
                 XmlNode inv = doc.CreateElement("Investment");
                 for (int i = 0; i < nodes.Length; i++)
                 {
-                    XmlNode node = doc.CreateElement(names[i]);
-                    node.InnerText = values[i];
+                    XmlNode node = doc.CreateElement(names[i].Replace(' ', '_'));
+                    node.InnerText = values[i].Replace(' ', '_');
                     inv.AppendChild(node);
                 }
 
@@ -53,7 +52,6 @@ namespace Proy1_Diseno_InvestSys.Controller
                 doc.Save("Log.xml");
             }
             catch (Exception e) {
-                Console.WriteLine("Error XML");
                 Console.WriteLine(e.Message);
             }
         }

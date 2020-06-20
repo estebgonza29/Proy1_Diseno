@@ -16,7 +16,6 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable.rows = 5;
             _ratesTable.columns = 3;
         }
-
         public override void buildTable()
         {
             List<float> L1 = new List<float>();
@@ -44,12 +43,6 @@ namespace Proy1_Diseno_InvestSys.Model
             _ratesTable.matrix.Add(L3);
             _ratesTable.matrix.Add(L4);
             _ratesTable.matrix.Add(L5);
-
-            for (int i = 0; i < 5; i++) {
-                for (int j = 0; j < 3; j++) {
-                    Console.WriteLine(_ratesTable.matrix[i][j]);
-                }
-            }
         }
 
         public RatesTable getResult()

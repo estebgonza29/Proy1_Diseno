@@ -21,10 +21,16 @@ namespace Proy1_Diseno_InvestSys.Model
             else
                 _minimumAmount = 50000;
 
-            if (totalTerms < _minimumTerms && investedAmount < _minimumAmount)
+            if (totalTerms < _minimumTerms)
             {
-                Console.WriteLine("No cumple requisitos");
-                throw new Exception("No cumple requisitos");
+                if (investedAmount < _minimumAmount)
+                {
+                    Console.WriteLine("El monto ingresado es menor al monto mínimo");
+                    throw new Exception("El monto ingresado es menor al monto mínimo");
+                }
+
+                Console.WriteLine("El plazo ingresado es menor al plazo mínimo");
+                throw new Exception("El plazo ingresado es menor al plazo mínimo");
             }
 
             else if (totalTerms >= ratesTable.matrix[(ratesTable.rows - 1)][0])
