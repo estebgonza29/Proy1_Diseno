@@ -68,16 +68,17 @@
     <Compile Include="Model\Current.cs" />
     <Compile Include="Model\InvSystem.cs" />
     <Compile Include="Model\RatesTable.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\TermDepositRatesBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\Class1.cs" />
+    <Compile Include="View\DisplayStrategy.cs" />
+    <Compile Include="View\GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GUIDisplay.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -87,6 +88,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\GUI.resx">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="JSonFiles\AgreedRate.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -106,6 +110,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="src\img\icons8-calculator-100.png" />
+    <Content Include="src\img\icons8-calculator-50.png" />
+    <Content Include="src\img\icons8-console-100.png" />
+    <Content Include="src\img\icons8-web-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

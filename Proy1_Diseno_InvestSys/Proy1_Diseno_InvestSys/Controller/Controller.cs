@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Proy1_Diseno_InvestSys.Controller
 {
-    class Controller {
-        private Controller instance;
+    public class Controller {
+        private static Controller instance;
         private DTOData dto { get; }
         private Logger xmlLogger;
         private Logger csvLogger;
@@ -19,7 +19,7 @@ namespace Proy1_Diseno_InvestSys.Controller
             csvLogger = new CSVLogger();
         }
 
-        public Controller getInstance() {
+        public static Controller getInstance() {
             if (instance == null) instance = new Controller();
             return instance;
         }
@@ -53,6 +53,14 @@ namespace Proy1_Diseno_InvestSys.Controller
             invSystem.calculateProduction();
             xmlLogger.log(dto.ToString());
             csvLogger.log(dto.ToString());
+        }
+
+        public List<string> getCurrencies() {
+            return Enum.GetNames(typeof(Currency)).ToList();
+        }
+
+        public List<string> getInvestments() {
+            return Enum.GetNames(typeof(InvestmentType)).ToList();
         }
     }
 }
