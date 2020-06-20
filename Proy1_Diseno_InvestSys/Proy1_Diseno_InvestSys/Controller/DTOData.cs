@@ -85,8 +85,16 @@ namespace Proy1_Diseno_InvestSys.Controller
             val += "Sistema de ahorro de inversión:" + investmentSystem.ToString().Replace('_', ' ') + "\n";
             val += "Interés anual correspondiente:" + (annualRate * 100) +  "%" + "\n";
             val += "Intereses ganados:" + totalProductions + "\n";
-            if (retention != 0) val += "Impuesto de renta:" + (totalProductions * retention) + "\n";
-            val += "Saldo final:" + Math.Round(((double)(totalProductions + investedAmount)), 2);
+            if (retention != 0)
+            {
+                val += "Impuesto de renta:" + (totalProductions * retention) + "\n";
+                val += "Saldo final:" + Math.Round(((double)(totalProductions + investedAmount - (totalProductions * retention))), 2);
+            }
+            else 
+            {
+                val += "Saldo final:" + Math.Round(((double)(totalProductions + investedAmount)), 2);
+            }
+            
             return val;
         }
     }

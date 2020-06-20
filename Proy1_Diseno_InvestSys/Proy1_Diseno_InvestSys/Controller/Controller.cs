@@ -47,6 +47,7 @@ namespace Proy1_Diseno_InvestSys.Controller
         }
 
         public void calculateProduction() {
+            dto.Retention = 0;
             createRatesTable();
             InvSystem invSystem;
             if (dto.InvestmentSystem == InvestmentType.AGREEDRATE) invSystem = new AgreedRate(dto.Name, dto.InvestedAmount, dto.TotalTerms, dto.Currency, dto.RatesTable);
