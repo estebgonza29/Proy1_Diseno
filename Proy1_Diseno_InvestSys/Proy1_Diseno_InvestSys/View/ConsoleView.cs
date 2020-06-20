@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proy1_Diseno_InvestSys.Controller;
+using System;
 
 namespace ConsoleView
 {
@@ -11,6 +12,7 @@ namespace ConsoleView
             float ammount;
             int days;
             float annualRate = 0;
+
             Console.WriteLine("Bienvenido al sistema de registro de datos para comenzar su cuenta de inversión.");
             Console.WriteLine("Seleccione el tipo de inversión que desea realizar (1, 2 o 3):\n1.Cuenta Corriente (Solo colones).\n2.Inversión a la vista tasa pactada (Solo colones o dólares).\n3.Certificado de depósito a plazo (Solo colones).");
             String numInversion = Console.ReadLine();
@@ -35,7 +37,7 @@ namespace ConsoleView
                 ammount = proveAmmount(25000);
                 //Obtener el interes anual segun datos actuales
                 annualRate = annualRate * 100;
-                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: ");
+                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
 
             }
 
@@ -64,7 +66,7 @@ namespace ConsoleView
                     Console.Write("Monto a invertir en Colones (Debe ser un número, puede contener decimales y mayor o igual a 100000): ");
                     ammount = proveAmmount(100000);
                     annualRate = annualRate * 100;
-                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: ");
+                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
 
                 }
                 else if (numCurrency == "2")
@@ -77,7 +79,7 @@ namespace ConsoleView
                     Console.Write("Monto a invertir en Dolares (Debe ser un número, puede contener decimales y mayor o igual a 500): ");
                     ammount = proveAmmount(500);
                     annualRate = annualRate * 100;
-                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate);
+                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate+"\n");
 
                 }
             }
@@ -96,7 +98,7 @@ namespace ConsoleView
                 Console.Write("Monto a invertir en Colones (Debe ser un número, puede contener decimales y mayor o igual a ): ");
                 ammount = proveAmmountTermDeposit(days);
                 annualRate = annualRate * 100;
-                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate);
+                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate + "\n");
             }
             
 

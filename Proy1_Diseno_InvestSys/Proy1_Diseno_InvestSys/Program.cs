@@ -8,7 +8,7 @@ namespace Proy1_Diseno_InvestSys
 {
     static class Program
     {
-        /// <summary>
+        /*/// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
@@ -17,6 +17,6 @@ namespace Proy1_Diseno_InvestSys
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-        }
+        }*/
     }
 }
