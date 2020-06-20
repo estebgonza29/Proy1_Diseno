@@ -22,7 +22,7 @@ namespace Proy1_Diseno_InvestSys.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI());
+            //Application.Run(new GUIDisplay());
         }
     }
 }

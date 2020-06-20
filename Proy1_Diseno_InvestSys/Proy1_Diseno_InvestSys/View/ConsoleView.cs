@@ -1,10 +1,18 @@
 ﻿using Proy1_Diseno_InvestSys.Controller;
+using Proy1_Diseno_InvestSys.View;
 using System;
 
 namespace ConsoleView
 {
-    class ConsoleView
+    class ConsoleView : DisplayStrategy
     {
+        private Controller instance;
+
+        public ConsoleView() : base()
+        {
+            instance = controller;
+        }
+
         static void Main(string[] args)
         {
             string name;
