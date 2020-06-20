@@ -15,6 +15,8 @@ namespace Proy1_Diseno_InvestSys.Controller
         private Currency currency;
         private float retention;
         private RatesTable ratesTable;
+        private float annualRate;
+        private float totalProductions;
 
         public DTOData() {
             name = "";
@@ -24,7 +26,9 @@ namespace Proy1_Diseno_InvestSys.Controller
             currency = 0;
             retention = 0;
             ratesTable = null;
-        }
+            annualRate = 0;
+            totalProductions = 0;
+    }
 
         public string Name {
             get { return name; }
@@ -54,6 +58,18 @@ namespace Proy1_Diseno_InvestSys.Controller
         public float Retention {
             get { return retention; }
             set { retention = value; }
+        }
+
+        public float AnnualRate
+        {
+            get { return annualRate; }
+            set { annualRate = value; }
+        }
+
+        public float TotalProductions
+        {
+            get { return totalProductions; }
+            set { totalProductions = value; }
         }
 
         public RatesTable RatesTable {

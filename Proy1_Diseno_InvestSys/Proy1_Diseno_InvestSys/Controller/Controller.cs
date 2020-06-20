@@ -55,9 +55,10 @@ namespace Proy1_Diseno_InvestSys.Controller
             else {
                 throw new Exception("Invalid investment type");
             }
-            invSystem.calculateProduction();
-            xmlLogger.log(dto.ToString());
-            csvLogger.log(dto.ToString());
+            invSystem.calculateProduction(dto);
+
+            /*xmlLogger.log(dto.ToString());
+            csvLogger.log(dto.ToString());*/
         }
 
         public List<string> getCurrencies() {

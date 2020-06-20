@@ -11,7 +11,7 @@ namespace Proy1_Diseno_InvestSys.Model
     {
         private float retention = 0.08f;
         public TermDeposit(string name, float investedAmount, int totalTerms, Currency currency, RatesTable ratesTable) : base(name, investedAmount, totalTerms, currency, ratesTable) { }
-        public override void calculateProduction()
+        public override void calculateProduction(DTOData dto)
         {
             _minimumTerms = 30;
             _totalProductions = 0;
@@ -44,7 +44,9 @@ namespace Proy1_Diseno_InvestSys.Model
             {
                 totalProductions += investedAmount * (i / 360);
             }
-            _finalAmount = totalProductions + investedAmount - (totalProductions * retention);
+            dto.AnnualRate = _annualRate;
+            dto.TotalProductions = _totalProductions;
+            dto.Retention = retention;
         }
     }
 }
