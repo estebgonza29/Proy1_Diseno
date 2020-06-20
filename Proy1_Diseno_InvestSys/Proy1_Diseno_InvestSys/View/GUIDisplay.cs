@@ -14,7 +14,6 @@ namespace Proy1_Diseno_InvestSys.View
 
         public GUIDisplay() : base() {
             gui = new GUI(controller);
-            gui.Show();
         }
 
         [STAThread]
@@ -22,7 +21,8 @@ namespace Proy1_Diseno_InvestSys.View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new GUIDisplay());
+            GUIDisplay guiShow = new GUIDisplay();            
+            Application.Run(guiShow.gui);
         }
     }
 }
