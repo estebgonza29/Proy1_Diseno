@@ -15,6 +15,7 @@ namespace ConsoleView
 
         static void Main(string[] args)
         {
+            ConsoleView consView = new ConsoleView();
             string name;
             string investmentSys;
             float ammount;
@@ -43,6 +44,15 @@ namespace ConsoleView
                 days = proveDays(1);
                 Console.Write("Monto a invertir en Colones (Debe ser un número, puede contener decimales y mayor o igual a 25000): ");
                 ammount = proveAmmount(25000);
+
+                
+                
+                consView.controller.DTO.Name = name;
+                consView.controller.DTO.InvestedAmount = ammount;
+                consView.controller.DTO.InvestmentSystem = InvestmentType.CURRENT;
+                consView.controller.DTO.TotalTerms = days;
+                consView.controller.DTO.Currency = Currency.CRC;
+                
                 //Obtener el interes anual segun datos actuales
                 annualRate = annualRate * 100;
                 Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
@@ -73,6 +83,14 @@ namespace ConsoleView
                     days = proveDays(15);
                     Console.Write("Monto a invertir en Colones (Debe ser un número, puede contener decimales y mayor o igual a 100000): ");
                     ammount = proveAmmount(100000);
+
+                    consView.controller.DTO.Name = name;
+                    consView.controller.DTO.InvestedAmount = ammount;
+                    consView.controller.DTO.InvestmentSystem = InvestmentType.AGREEDRATE;
+                    consView.controller.DTO.TotalTerms = days;
+                    consView.controller.DTO.Currency = Currency.CRC;
+
+                    //Obtener el interes anual segun datos actuales
                     annualRate = annualRate * 100;
                     Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
 
@@ -86,8 +104,15 @@ namespace ConsoleView
                     days = proveDays(15);
                     Console.Write("Monto a invertir en Dolares (Debe ser un número, puede contener decimales y mayor o igual a 500): ");
                     ammount = proveAmmount(500);
+                    consView.controller.DTO.Name = name;
+                    consView.controller.DTO.InvestedAmount = ammount;
+                    consView.controller.DTO.InvestmentSystem = InvestmentType.AGREEDRATE;
+                    consView.controller.DTO.TotalTerms = days;
+                    consView.controller.DTO.Currency = Currency.USD;
+
+                    //Obtener el interes anual segun datos actuales
                     annualRate = annualRate * 100;
-                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate+"\n");
+                    Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
 
                 }
             }
@@ -105,8 +130,15 @@ namespace ConsoleView
                 days = proveDays(30);
                 Console.Write("Monto a invertir en Colones (Debe ser un número, puede contener decimales y mayor o igual a ): ");
                 ammount = proveAmmountTermDeposit(days);
+                consView.controller.DTO.Name = name;
+                consView.controller.DTO.InvestedAmount = ammount;
+                consView.controller.DTO.InvestmentSystem = InvestmentType.TERMDEPOSIT;
+                consView.controller.DTO.TotalTerms = days;
+                consView.controller.DTO.Currency = Currency.CRC;
+
+                //Obtener el interes anual segun datos actuales
                 annualRate = annualRate * 100;
-                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: "+annualRate + "\n");
+                Console.WriteLine("Datos ingresados:\nCliente: " + name + "\nMonto de ahorro e inversión: " + ammount + "\nPlazo de la inversión días: " + days + "\nSistema de ahorro e inversión: " + investmentSys + "\nInterés anual correspondiente: \n");
             }
             
 
